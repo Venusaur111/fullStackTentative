@@ -5,7 +5,8 @@ Session3/
 │   │   ├── models/        # Connexion et requêtes SQL (PostgreSQL)
 │   │   ├── routes/        # Définition des routes (/etudiants)
 │   │   ├── middlewares/   # Gestion centralisée des erreurs
-│   │   └── index.ts       # Point d'entrée du serveur Express
+│   │   └── index.ts    
+|      # Point d'entrée du serveur Express
 │   ├── package.json
 │   └── tsconfig.json
 │
