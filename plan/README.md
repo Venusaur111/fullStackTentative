@@ -1,13 +1,11 @@
 Session3/
 ├── backend/          # API Express + TypeScript + PostgreSQL
 │   ├── src/
-│   │   ├── controllers/   # Logique métier (gestion des requêtes/réponses)
-│   │   ├── models/        # Connexion et requêtes SQL (PostgreSQL)
-│   │   ├── routes/        # Définition des routes (/etudiants)
-│   │   ├── middlewares/   # Gestion centralisée des erreurs
-│   │   └── index.ts    
-|      # Point d'entrée du serveur Express
-│   ├── package.json
+|   Model/
+|   |   |
+|   Repositories
+|   |   
+|       
 │   └── tsconfig.json
 │
 └── frontend/         # React + Vite + TypeScript (Ton projet actuel)
