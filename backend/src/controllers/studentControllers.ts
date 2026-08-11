@@ -1,5 +1,5 @@
 import  { Request, Response, NextFunction} from 'express';
-imort * as studentRepo from '../repositories/studentRepository';
+import * as studentRepo from '../repositories/studentRepository.ts';
 
 export const getStudents = async (req: Request, res: Response, next: NextFunction) => {
     try{
