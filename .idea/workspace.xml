@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2cc4933-5c6a-48b1-ab74-9d863c123e96" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/db.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/db.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/student.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/student.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/student.repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/student.repository.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +59,7 @@
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/aina/Job/HEI/WEB/WEB2/experimets",
+    "last_opened_file_path": "/home/aina/Job/HEI/WEB/WEB2/solo-project",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.jshint": "true",
     "node.js.detected.package.tslint": "true",

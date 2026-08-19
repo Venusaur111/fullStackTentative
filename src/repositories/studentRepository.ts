@@ -1,5 +1,5 @@
-import { dbPool } from '../config/db.js';
-import { type Student } from '../models/student.model.js';
+import { dbPool } from '../config/db.ts';
+import { type Student } from '../models/student.model.ts';
 
 export class StudentRepository{
     async findAll(): Promise<Student[]>{

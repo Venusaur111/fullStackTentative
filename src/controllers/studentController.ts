@@ -1,5 +1,5 @@
 import {type Request, type Response} from 'express';
-import { StudentRepository } from '../repositories/student.repository.js';
+import { StudentRepository } from '../repositories/student.repository.ts';
 
 const studentRepository = new StudentRepository();
 
