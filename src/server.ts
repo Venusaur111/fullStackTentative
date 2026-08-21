@@ -1,5 +1,5 @@
 import express from 'express';
-import type { Express, Request, Response } from 'express';
+import type { Express } from 'express';
 import * as process from "node:process";
 import { studentRoutes } from './routes/studentRoutes.js';
 import { userRoutes } from './routes/userRoutes.js';
