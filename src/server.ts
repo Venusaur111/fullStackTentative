@@ -1,6 +1,6 @@
 import express, { type Express, type Request, type Response } from 'express';
 import * as process from "node:process";
-import studentRoutes from './routes/students.routes.js'
+import studentRoutes from './routes/studentsRoutes.js'
 
 const app : Express = express();
 

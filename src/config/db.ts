@@ -12,9 +12,9 @@ export const dbPool = new Pool({
     idleTimeoutMillis: 36000,
 })
 
-dbPool.on('connect', () => {
+dbPool.on('connect', (): void => {
     console.log('Successfully connected to the database');
 })
-dbPool.on('error', err => {
+dbPool.on('error', (err: Error) => {
     console.error('Unexepted error on idle client', err.stack);
 });

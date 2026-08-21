@@ -1,5 +1,5 @@
 import { Router, type Request, type Response } from 'express';
-import { StudentController } from '../controllers/student.controller.ts';
+import { StudentController } from '../controllers/studentController.js';
 
 const route = Router();
 const studentController = new StudentController();
@@ -13,7 +13,7 @@ route.get("/:id", async (req: Request, res: Response) => {
 });
 
 route.put("/:id", async (req: Request, res: Response) => {
-    return studentController.updateStudentName(req, res); // Ou une autre méthode de maj selon votre besoin
+    return studentController.updateStudentName(req, res);
 });
 
 route.delete("/:id", async (req: Request, res: Response) => {

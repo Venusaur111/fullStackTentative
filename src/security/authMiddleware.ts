@@ -1,7 +1,7 @@
 import { type Request, type Response, type NextFunction} from 'express';
 import jwt from 'jsonwebtoken';
 import * as process from "node:process";
-
+//email, id, role
 const SECRET_KEY = process.env.JWT_SECRET_KEY || 'fallback_secret';
 
 export interface AuthenticateRequest extends Request {
