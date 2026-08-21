@@ -1,6 +1,6 @@
-import { User } from './userModel.js'
+import { UserModel } from './userModel.js';
 
-export class StudentModel extends User{
+export interface StudentModel extends UserModel {
     student_id: string;
     user_id: number;
 }
