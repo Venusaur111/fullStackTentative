@@ -14,7 +14,6 @@ router.post('/login', async (req: Request, res: Response) => {
             return res.status(400).json({ message: 'Email and password are required' });
         }
 
-        // Find user by email
         const query = 'SELECT * FROM users WHERE email = $1';
         const result = await dbPool.query(query, [email]);
         const user = result.rows[0];
@@ -23,13 +22,11 @@ router.post('/login', async (req: Request, res: Response) => {
             return res.status(401).json({ message: 'Invalid credentials' });
         }
 
-        // Verify password
         const isPasswordValid = await bcrypt.compare(password, user.password);
         if (!isPasswordValid) {
             return res.status(401).json({ message: 'Invalid credentials' });
         }
 
-        // Generate token
         const token = authUtils.generateToken({ id: user.id, email: user.email });
 
         return res.status(200).json({ message: 'Logged in successfully', token });
