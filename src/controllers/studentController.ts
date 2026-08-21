@@ -9,8 +9,7 @@ export class StudentController {
             const students = await studentRepository.findAll();
             return res.status(200).json(students);
         } catch (err) {
-            console.error('Unexpected error:', err.stack);
-            return res.status(500).json({ message: 'Internal Server Error' });
+            return res.status(500).json({message: 'Server Error', error: err});
         }
     }
 

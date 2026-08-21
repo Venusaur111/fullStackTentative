@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f2cc4933-5c6a-48b1-ab74-9d863c123e96" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/studentController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/studentController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repositories/studentRepository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/studentRepository.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/studentsRoutes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/studentsRoutes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +59,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "feat/new-restart",
+    "git-widget-placeholder": "#3 on feat/new-restart",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/aina/Job/HEI/WEB/WEB2/experimets",
