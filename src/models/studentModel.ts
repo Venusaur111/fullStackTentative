@@ -1,8 +1,6 @@
-export interface Student {
-    id?: number;
-    name: string;
-    email: string;
-    password: string;
-    phone_number: string;
-    created_at?: Date;
+import { User } from './userModel.js'
+
+export class StudentModel extends User{
+    student_id: string;
+    user_id: number;
 }
