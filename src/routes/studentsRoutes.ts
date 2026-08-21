@@ -1,27 +1,38 @@
-import { Router, type Request, type Response } from 'express';
-import { StudentController } from '../controllers/studentController.js';
+import { Router } from 'express';
+import { StudentRepository } from '../repositories/studentRepository.js';
+import { verifyToken } from '../middlewares/authMiddleware.js';
 
-const route = Router();
-const studentController = new StudentController();
+const router = Router();
+const studentRepository = new StudentRepository();
 
-route.get("/", async (req: Request, res: Response) => {
-    return studentController.findAll(req, res);
+router.get('/students', async (req, res) => {
+    try {
+        const students = await studentRepository.findAll();
+        res.status(200).json(students);
+    } catch (error) {
+        res.status(500).json({ error: (error as Error).message });
+    }
 });
 
-route.get("/:id", async (req: Request, res: Response) => {
-    return studentController.getStudentById(req, res);
+router.post('/students', verifyToken, async (req, res) => {
+    try {
+        const newStudent = await studentRepository.create(req.body);
+        res.status(201).json(newStudent);
+    } catch (error) {
+        res.status(500).json({ error: (error as Error).message });
+    }
 });
 
-route.put("/:id", async (req: Request, res: Response) => {
-    return studentController.updateStudentName(req, res);
+router.delete('/students/:id', verifyToken, async (req, res) => {
+    try {
+        const deleted = await studentRepository.delete(Number(req.params.id));
+        if (!deleted) {
+            return res.status(404).json({ message: 'Student not found' });
+        }
+        res.status(204).send();
+    } catch (error) {
+        res.status(500).json({ error: (error as Error).message });
+    }
 });
 
-route.delete("/:id", async (req: Request, res: Response) => {
-    return studentController.deleteStudentById(req, res);
-});
-
-route.post("/", async (req: Request, res: Response) => {
-    return studentController.addStudent(req, res);
-});
-
-export default route;
+export const studentRoutes = router;
